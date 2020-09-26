@@ -2,6 +2,7 @@
 #include<windows.h>
 #include<stdlib.h>
 #include<string.h>
+#include<conio.h>
 
 void showFriend ();
 void gotoxy (int ,int);
@@ -29,7 +30,7 @@ void gotoxy (int a, int b)
 void showFriend ()
 {
     F_LIST p[100];
-    int i=0, j, x = 30, y= 50,nof,k,f;
+    int i=0, j, x = 30, y= 50,nof,k,f=1;
     char a;
     FILE *db;
     db = fopen ("friend_List.txt", "r");
